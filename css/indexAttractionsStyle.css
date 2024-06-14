@@ -1,0 +1,85 @@
+/* 景点模块容器样式 */
+.attractions-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #95a5a6;
+    border-radius: 10px;
+}
+
+/* 景点的总体标题样式 */
+.attractions-header {
+    margin-bottom: 20px;
+}
+
+/* 景点的中文标题样式 */
+.attractions-headline {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 景点的英文标题样式 */
+.attractions-english {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 景点容器样式 */
+.attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 景点块样式 */
+.attraction {
+    width: calc(30% - 20px); /* 计算宽度以适合三个并排放置，减去间距 */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: white; /* 设置景点块背景颜色 */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* 添加悬停放大效果 */
+    box-sizing: border-box; /* 让 padding 不会增加宽度 */
+    text-decoration: none; /* 去掉链接的下划线 */
+    color: inherit; /* 继承父元素的文本颜色 */
+}
+
+/* 景点块标题样式 */
+.attraction h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 景点块描述样式 */
+.attraction p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 景点块图片样式 */
+.attraction img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 鼠标悬停时景点块放大效果 */
+.attraction:hover {
+    transform: scale(1.1);
+}
+
+/* 媒体查询以适应小屏幕 */
+@media (max-width: 900px) {
+    .attraction {
+        width: calc(50% - 20px); /* 适应两个并排放置 */
+    }
+}
+
+@media (max-width: 600px) {
+    .attraction {
+        width: calc(100% - 20px); /* 适应单个放置 */
+    }
+}

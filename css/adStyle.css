@@ -1,0 +1,25 @@
+/* 广告容器样式 */
+.ad-container {
+    position: fixed; /* 将广告固定在页面上 */
+    top: 50%; /* 从页面顶部50%的位置开始 */
+    right: -200px; /* 从页面右边开始，初始位置在屏幕外 */
+    transform: translateY(-50%); /* 将广告向上移动50%，以使其垂直居中 */
+    z-index: 9999; /* 确保广告始终显示在页面内容之上 */
+    animation: slideIn 1s ease-in-out forwards; /* 使用CSS动画实现广告的滑入效果 */
+}
+
+/* 广告图片样式 */
+.ad-container img {
+    width: 180px; /* 设置广告图片的宽度 */
+    height: auto; /* 自动调整高度以保持比例 */
+}
+
+/* 定义广告滑入动画 */
+@keyframes slideIn {
+    from {
+        right: -200px; /* 初始位置在屏幕外 */
+    }
+    to {
+        right: 0; /* 最终位置在页面右边 */
+    }
+}

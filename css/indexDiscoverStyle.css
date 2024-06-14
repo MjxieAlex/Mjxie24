@@ -1,0 +1,81 @@
+/* 发现福州容器样式 */
+.discover-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #95a5a6;
+    border-radius: 10px;
+}
+
+/* 发现福州的总体标题样式 */
+.discover-header {
+    margin-bottom: 20px;
+}
+
+/* 发现福州的中文标题样式 */
+.discover-headline {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 发现福州的英文标题样式 */
+.discover-english {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 轮播图容器样式 */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* 固定轮播图容器的最大宽度 */
+    height: 450px; /* 固定轮播图容器的高度 */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 轮播图样式 */
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片按比例缩放并填满容器 */
+    border-radius: 10px;
+}
+
+/* 前后按钮样式 */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}

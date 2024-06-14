@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="./css/loginStyle.css">
+    <script src="./js/successLogin.js"></script>
+</head>
+
+<body>
+    <div class="outer-container">
+        <!-- 左侧吉祥物图像 -->
+        <img src="./image/rong.png" class="side-image" alt="Left Image">
+        <!-- 登录表单 -->
+        <div class="container">
+            <h2>登录</h2>
+            <form id="loginForm">
+                <!-- 用户名 -->
+                <label for="username">用户名</label>
+                <input type="text" id="username" name="username" required minlength="3">
+                <span id="usernameError" class="error"></span>
+
+                <!-- 密码 -->
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password" required minlength="6">
+                <span id="passwordError" class="error"></span>
+
+                <!-- 登录按钮 -->
+                <button type="submit">登录</button>
+            </form>
+            <!-- 直接注册选项 -->
+            <p>还没有账号? <a href="enroll.html">立即注册</a></p>
+        </div>
+        <!-- 右侧吉祥物图像 -->
+        <img src="./image/rong.png" class="side-image" alt="Right Image">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+/* 登录css样式文件 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../image/enrollBackground.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 中部内容布局样式 */
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+}
+
+/* 两侧吉祥物样式 */
+.side-image {
+    height: 200px;
+}
+
+/* 登录框样式 */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+/* “登录”字体样式 */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 表单提示内容样式 */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 输入框样式 */
+input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 登录按钮样式 */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 登录按钮悬停样式 */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 错误提示样式 */
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* 提示注册文字样式 */
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 注册链接样式 */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* 注册链接放置样式 */
+a:hover {
+    text-decoration: underline;
+}

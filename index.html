@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福州旅游首页</title>
+    <link rel="stylesheet" href="./css/indexMainStyle.css">
+    <link rel="stylesheet" href="./css/indexIntroStyle.css">
+    <link rel="stylesheet" href="./css/indexAttractionsStyle.css">
+    <link rel="stylesheet" href="./css/indexDiscoverStyle.css">
+    <link rel="stylesheet" href="./css/adStyle.css">
+    <script src="./js/time.js"></script>
+    <script src="./js/slider.js" defer></script>
+</head>
+
+<body>
+    <!-- 广告图片 -->
+    <div class="ad-container">
+        <a href="https://wlt.fujian.gov.cn/" target="_blank">
+            <img src="./image/rong.png" alt="广告图片">
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./image/FuzhouLogo.png" alt="福州旅游">
+        </div>
+        <h1 id="headline">欢迎来到福州</h1>
+        <div class="user-links">
+            <a href="./login.html" target="_blank">登录</a> / <a href="./enroll.html" target="_blank">注册</a>
+            <span id="local-time">加载中...</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">简介</a></li>
+            <li><a href="#">景点</a></li>
+            <li><a href="#">美食</a></li>
+            <li><a href="#">活动</a></li>
+            <li><a href="#">住宿</a></li>
+            <li><a href="#">交通</a></li>
+            <li><a href="#">旅行贴士</a></li>
+        </ul>
+    </nav>
+    <!-- 模块一：介绍福州 -->
+    <section class="intro-wrapper">
+        <div class="intro-header">
+            <h2 class="intro-headline">福州简介</h2>
+            <p class="intro-english">Fuzhou Introduction</p>
+        </div>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p>福州，简称“榕”，别称“承天”，是福建省省会，中国东南沿海重要的中心城市之一。福州有着悠久的历史和丰富的文化底蕴。位于福建省东南沿海，东临太平洋，南濒台湾海峡，地理位置优越，气候宜人。福州拥有众多的历史古迹、风景名胜和特色美食，是一座充满活力和魅力的城市。
+                </p>
+                <p>福州的历史可以追溯到3000多年前的秦朝时期，是中国南方最早的海上丝绸之路起点之一。在悠久的历史长河中，福州曾是海上贸易的重要枢纽，也是文化交流的重要中心。</p>
+            </div>
+            <div class="intro-image">
+                <img class="FuzhouIntroPic" src="./image/FuzhouIntroPic.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 模块二：热门景点 -->
+    <section class="attractions-wrapper">
+        <div class="attractions-header">
+            <h2 class="attractions-headline">热门景点</h2>
+            <p class="attractions-english">Popular Attractions</p>
+        </div>
+        <div class="attractions-container">
+            <a href="https://baike.baidu.com/item/%E4%B8%89%E5%9D%8A%E4%B8%83%E5%B7%B7/21899" target="_blank"
+                class="attraction">
+                <img src="./image/SFQXPic.jpg" alt="Attraction 1">
+                <h3>三坊七巷</h3>
+                <p>福州老城区中最具代表性的历史文化街区，保存了大量明清时期的建筑，是福州历史文化的缩影。</p>
+            </a>
+            <a href="https://baike.baidu.com/item/%E9%BC%93%E5%B1%B1/950464" target="_blank" class="attraction">
+                <img src="./image/GSPic.jpg" alt="Attraction 2">
+                <h3>鼓山公园</h3>
+                <p>位于福州市中心，是一个历史悠久、风景优美的山岗公园，是老福州市民休闲散步的好去处。</p>
+            </a>
+            <a href="https://baike.baidu.com/item/%E7%A6%8F%E5%B7%9E%E8%A5%BF%E6%B9%96%E5%85%AC%E5%9B%AD/8597500"
+                target="_blank" class="attraction">
+                <img src="./image/FZXHPic.jpg" alt="Attraction 3">
+                <h3>福州西湖公园</h3>
+                <p>福州西湖公园是福州历史最悠久的公园，被人称为“福建园林明珠”,为福建省“十佳风景区”之一。</p>
+            </a>
+        </div>
+    </section>
+    <!-- 模块三：发现福州（图片轮播图） -->
+    <section class="discover-wrapper">
+        <div class="discover-header">
+            <h2 class="discover-headline">发现福州</h2>
+            <p class="discover-english">Discover Fuzhou</p>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="./image/slide_1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="./image/slide_2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="./image/slide_3.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="./image/slide_4.jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="./image/slide_5.jpg" alt="Slide 5"></div>
+                </div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <footer>
+        <p>版权所有 &copy; 2024 谢民敬</p>
+    </footer>
+</body>
+
+</html>

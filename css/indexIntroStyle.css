@@ -1,0 +1,63 @@
+/* 首页介绍模块css文件 */
+/* 介绍的容器样式 */
+.intro-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #95a5a6;
+    border-radius: 10px;
+}
+
+/* 介绍的总体标题样式 */
+.intro-header {
+    margin-bottom: 20px;
+}
+
+/* 介绍的中文标题样式 */
+.intro-headline {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 介绍的英文标题样式 */
+.intro-english {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 介绍的内容的样式 */
+.intro-content {
+    display: flex;/*使用弹性盒子*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 介绍内容文本样式 */
+.intro-text {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* 介绍内容图片容器样式 */
+.intro-image {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* 介绍内容图片本体样式 */
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 媒体监测器，保证600px以下视图正常 */
+@media (max-width: 600px) {
+    .intro-text, .intro-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+}
